@@ -1,5 +1,5 @@
 <?php
-namespace Caffeinated\Shinobi\Traits;
+namespace Tikamsah\Shinobi\Traits;
 
 trait ShinobiTrait
 {
@@ -17,7 +17,7 @@ trait ShinobiTrait
 	 */
 	public function roles()
 	{
-		return $this->belongsToMany('\Caffeinated\Shinobi\Models\Role')->withTimestamps();
+		return $this->belongsToMany('\Tikamsah\Shinobi\Models\Role')->withTimestamps();
 	}
 
 	/**
