@@ -1,9 +1,9 @@
 <?php
-namespace Caffeinated\Shinobi\Middleware;
+namespace Tikamsah\Shinobi\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
-use Caffeinated\Shinobi\Models\Role;
+use Tikamsah\Shinobi\Models\Role;
 
 class UserHasPermission
 {
