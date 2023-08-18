@@ -1,5 +1,5 @@
 <?php
-namespace Caffeinated\Shinobi;
+namespace Tikamsah\Shinobi;
 
 use Blade;
 use Illuminate\Support\ServiceProvider;
@@ -37,7 +37,7 @@ class ShinobiServiceProvider extends ServiceProvider
 		$this->app->singleton('shinobi', function ($app) {
 			$auth = $app->make('Illuminate\Contracts\Auth\Guard');
 
-			return new \Caffeinated\Shinobi\Shinobi($auth);
+			return new \Tikamsah\Shinobi\Shinobi($auth);
 		});
 
 		$this->configureTwig();
@@ -88,7 +88,7 @@ class ShinobiServiceProvider extends ServiceProvider
 	/**
 	 * Configure Twig
 	 *
-	 * Registers the necessary Caffeinated Shinobi tags with Twig;
+	 * Registers the necessary Tikamsah Shinobi tags with Twig;
 	 * only if Twig is set as the template engine.
 	 *
 	 * @return null
@@ -98,9 +98,9 @@ class ShinobiServiceProvider extends ServiceProvider
 		$engine = $this->app['config']->get('themes.engine');
 
 		if ($engine == 'twig') {
-			$this->app['config']->push('sapling.tags', 'Caffeinated\Shinobi\Twig\TokenParser\Twig_TokenParser_Can');
-			$this->app['config']->push('sapling.tags', 'Caffeinated\Shinobi\Twig\TokenParser\Twig_TokenParser_CanAtLeast');
-			$this->app['config']->push('sapling.tags', 'Caffeinated\Shinobi\Twig\TokenParser\Twig_TokenParser_Role');
+			$this->app['config']->push('sapling.tags', 'Tikamsah\Shinobi\Twig\TokenParser\Twig_TokenParser_Can');
+			$this->app['config']->push('sapling.tags', 'Tikamsah\Shinobi\Twig\TokenParser\Twig_TokenParser_CanAtLeast');
+			$this->app['config']->push('sapling.tags', 'Tikamsah\Shinobi\Twig\TokenParser\Twig_TokenParser_Role');
 		}
 	}
 }
