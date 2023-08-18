@@ -1,7 +1,7 @@
 <?php
-namespace Caffeinated\Shinobi;
+namespace Tikamsah\Shinobi;
 
-use Caffeinated\Shinobi\Models\Role;
+use Tikamsah\Shinobi\Models\Role;
 use Illuminate\Contracts\Auth\Guard;
 
 class Shinobi
