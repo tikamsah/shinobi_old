@@ -1,5 +1,5 @@
 <?php
-namespace Caffeinated\Shinobi\Twig\Node;
+namespace Tikamsah\Shinobi\Twig\Node;
 
 use Twig_Node;
 use Twig_NodeInterface;
