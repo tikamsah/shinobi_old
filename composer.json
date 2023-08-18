@@ -1,5 +1,5 @@
 {
-    "name": "caffeinated/shinobi",
+    "name": "tikamsah/shinobi",
     "description": "Laravel 5 Roles and Permissions",
     "keywords": ["shinobi", "roles", "permissions", "auth", "laravel", "caffeinated"],
     "license": "MIT",
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Caffeinated\\Shinobi\\": "src/"
+            "Tikamsah\\Shinobi\\": "src/"
         }
     },
     "extra": {
