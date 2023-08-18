@@ -1,11 +1,11 @@
 <?php
-namespace Caffeinated\Shinobi\Twig\TokenParser;
+namespace Tikamsah\Shinobi\Twig\TokenParser;
 
 use Twig_Token;
 use Twig_TokenParser;
 use Twig_Error_Syntax;
 use Twig_Node;
-use Caffeinated\Shinobi\Twig\Node\Twig_Node_Role;
+use Tikamsah\Shinobi\Twig\Node\Twig_Node_Role;
 
 class Twig_TokenParser_Role extends Twig_TokenParser
 {
